@@ -1,0 +1,31 @@
+# Pycache
+__pycache__/
+
+# Virtual Environments
+venv/
+
+# IDE Config
+.vscode/
+
+# Third party folders
+wandb/
+artifacts/
+
+# Pytl training data
+checkpoints/
+training_logs/
+old/
+notes_to_self
+
+# Datasets
+datasets/*/
+
+# Slurm log files
+*.out
+SBATCH_train.sh
+notes_to_self
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+*.png

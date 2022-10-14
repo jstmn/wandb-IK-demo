@@ -1,0 +1,43 @@
+program: train.py
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args}
+method: random 
+parameters:
+  nb_nodes:
+    values: [3, 6, 9, 12]
+  dim_latent_space:
+    values: [4, 6, 8, 10, 12]
+  coeff_fn_config:
+    values: [1, 2, 3, 4]
+  coeff_fn_internal_size:
+    values: [256, 512, 768, 1024, 1280]
+  learning_rate:
+    distribution: categorical
+    values:
+      - 0.000005
+      - 0.000075
+      - 0.0001
+      - 0.00025
+      - 0.000375
+      - 0.0005
+      - 0.000625
+      - 0.00075
+      - 0.001
+
+
+
+
+# program: train.py
+# method: bayes
+# metric:
+#   name: validation_loss
+#   goal: minimize
+# parameters:
+#   learning_rate:
+#     min: 0.0001
+#     max: 0.1
+#   optimizer:
+#     values: ["adam", "sgd"]
