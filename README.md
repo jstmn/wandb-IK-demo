@@ -1,8 +1,7 @@
+# wandb-IK-demo
 
-# Jkinpylib
+A sample training workflow of a 4dof planar robot to show off how to use Weights and Biases
 
-jkinpylib ('Jeremy's kinematics python library') has code to represent open kinematic chains, and perform forward and 
-inverse kinematics. 
 
 ## Instillation
 
